@@ -46,8 +46,8 @@ Divisions :
 * Inserir notificações num elemento
 
 Features :
--Lista de elementos
--Lista de presença dos elementos a cada reunião
--Lista de material levado pelos elementos para cada reunião
--Patrulha do elemento
--Cargo do elemento na patrulha
+* Lista de elementos
+* Lista de presença dos elementos a cada reunião
+* Lista de material levado pelos elementos para cada reunião
+* Patrulha do elemento
+* Cargo do elemento na patrulha
