@@ -32,6 +32,12 @@ class Login extends Component {
   render() {
     return (
       <div style={styles.mainContainer}>
+        <div style={styles.errorMessageContainer}>
+          <div style={styles.errorMessage}>
+            The email or the password is incorrect.
+          </div>
+          <div>X</div>
+        </div>
         <div style={styles.loginForm}>
           <div style={styles.header}>
             <div style={styles.headerTitle}>AEP 197 QUELFES</div>
