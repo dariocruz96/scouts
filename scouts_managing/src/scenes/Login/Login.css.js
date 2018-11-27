@@ -1,5 +1,10 @@
 const styles = {
-  body: { paddingLeft: 39, paddingTop: 24 },
+  body: {
+    fontFamily: "Comic Sans MS",
+    fontSize: 17,
+    paddingLeft: 39,
+    paddingTop: 24
+  },
   button: {
     height: 30,
     marginLeft: 175,
@@ -41,8 +46,9 @@ const styles = {
     backgroundColor: "white",
     border: "1px solid black",
     borderRadius: 4,
-    height: 300,
-    width: 300
+    height: 320,
+    width: 300,
+    opacity: 0.8
   },
   mainContainer: {
     alignItems: "center",
@@ -56,8 +62,12 @@ const styles = {
     width: "100%"
   },
   password: {
+    marginBottom: 5,
     paddingTop: 24
+  },
+
+  separateInput: {
+    marginBottom: 5
   }
 };
-
 export default styles;

@@ -10,7 +10,12 @@ class Login extends Component {
   constructor(props) {
     super(props);
     // Propriedades do estado
-    this.state = { email: "", password: "", loginSuccessful: false };
+    this.state = {
+      email: "",
+      password: "",
+      loginSuccessful: false,
+      isErrorShow: false
+    };
   }
 
   // Função que recebe o argumento event
@@ -27,23 +32,28 @@ class Login extends Component {
     const { email, password } = this.state;
     if (email === "aep197@escoteiros.pt" && password === "escoteiros") {
       this.setState({ loginSuccessful: true });
+      this.setState({ isErrorShow: false });
+    } else {
+      this.setState({ isErrorShow: true });
     }
   };
   render() {
     return (
       <div style={styles.mainContainer}>
-        <div style={styles.errorMessageContainer}>
-          <div style={styles.errorMessage}>
-            The email or the password is incorrect.
+        {this.state.isErrorShow && (
+          <div style={styles.errorMessageContainer}>
+            <div style={styles.errorMessage}>
+              The email or the password is incorrect.
+            </div>
+            <div>X</div>
           </div>
-          <div>X</div>
-        </div>
+        )}
         <div style={styles.loginForm}>
           <div style={styles.header}>
             <div style={styles.headerTitle}>AEP 197 QUELFES</div>
           </div>
           <div style={styles.body}>
-            <div>Email</div>
+            <div style={styles.separateInput}>Email</div>
             <input style={styles.input} onChange={this.handleEmailChange} />
             <div style={styles.password}>Password</div>
             <input
