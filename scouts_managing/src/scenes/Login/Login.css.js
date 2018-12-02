@@ -1,6 +1,9 @@
+// Globals
+import globals from "./../../config/globals";
+
 const styles = {
   body: {
-    fontFamily: "Comic Sans MS",
+    fontFamily: globals.font,
     fontSize: 17,
     paddingBottom: 24,
     paddingLeft: 39,
@@ -8,25 +11,25 @@ const styles = {
   },
   header: {
     alignItems: "center",
-    backgroundImage: "linear-gradient(to right, #f7e332, #1f8436, #0b77c7)",
-    borderBottom: "1px solid black",
+    background: globals.colors.gradient,
+    borderBottom: `1px solid ${globals.colors.black}`,
+    borderRadius: "4px 4px 0px 0px",
     display: "flex",
     height: 100,
     paddingLeft: 39
   },
   headerTitle: {
-    color: "white",
-    fontFamily: "Tahoma",
+    color: globals.colors.white,
+    fontFamily: globals.font,
     fontSize: 28
   },
   hidden: {
     display: "none"
   },
   loginForm: {
-    backgroundColor: "white",
-    border: "1px solid black",
+    backgroundColor: globals.colors.white,
     borderRadius: 4,
-    height: 324,
+    height: 330,
     width: 300
   },
   mainContainer: {
@@ -38,7 +41,6 @@ const styles = {
     flexDirection: "column",
     height: "100%",
     justifyContent: "center",
-    opacity: 0.8,
     width: "100%"
   },
   passwordContainer: {

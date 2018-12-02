@@ -1,8 +1,10 @@
 // React
 import React, { Component } from "react";
+// Globals
+import translations from "./../../config/translations";
 // Styles
 import styles from "./Login.css";
-// Component
+// Components
 import Button from "../../components/Button/Button";
 import ErrorMessage from "./../../components/ErrorMessage";
 import InputField from "../../components/InputField/InputField";
@@ -28,6 +30,9 @@ class Login extends Component {
     // Metodo para atualizar o estado
     this.setState({ email: value });
   };
+  handleErrorMessage = () => {
+    this.setState({ isErrorShow: false });
+  };
   handlePasswordChange = event => {
     const value = event.target.value;
     this.setState({ password: value });
@@ -40,9 +45,7 @@ class Login extends Component {
       this.setState({ isErrorShow: true });
     }
   };
-  handleErrorMessage = () => {
-    this.setState({ isErrorShow: false });
-  };
+
   render() {
     const { isErrorShow } = this.state;
     return (
@@ -50,22 +53,31 @@ class Login extends Component {
         <ErrorMessage
           closeErrorMessage={this.handleErrorMessage}
           isVisible={isErrorShow}
-          message="Email ou password incorretos."
+          message={translations.login.errorMessage}
         />
         <div style={styles.loginForm}>
           <div style={styles.header}>
-            <div style={styles.headerTitle}>AEP 197 QUELFES</div>
+            <div style={styles.headerTitle}>
+              {translations.login.headerTitle}
+            </div>
           </div>
           <div style={styles.body}>
-            <InputField label="Email" onChange={this.handleEmailChange} />
+            <InputField
+              label={translations.login.inputLabelEmail}
+              onChange={this.handleEmailChange}
+            />
             <div style={styles.passwordContainer}>
               <InputField
-                label="Password"
+                label={translations.login.inputLabelPassword}
                 onChange={this.handlePasswordChange}
                 type="password"
               />
             </div>
-            <Button label="Login" onClick={this.handleSubmit} type="submit" />
+            <Button
+              label={translations.login.loginButtonLabel}
+              onClick={this.handleSubmit}
+              type="submit"
+            />
           </div>
         </div>
       </div>

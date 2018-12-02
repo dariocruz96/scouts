@@ -1,18 +1,23 @@
+// Globals
+import globals from "./../../config/globals";
+
 const styles = {
   closeIcon: {
     cursor: "pointer",
-    paddingLeft: 14
+    paddingLeft: 16,
+    paddingTop: 2
   },
   errorMessage: {
+    fontFamily: globals.font,
+    fontSize: 14,
     paddingLeft: 39,
     paddingRight: 14
   },
   errorMessageContainer: {
     alignItems: "center",
-    backgroundColor: "#cc0000",
-    border: "1px solid black",
+    backgroundColor: globals.colors.errorRed,
     borderRadius: 4,
-    color: "white",
+    color: globals.colors.white,
     display: "flex",
     height: 50,
     marginBottom: 18,
