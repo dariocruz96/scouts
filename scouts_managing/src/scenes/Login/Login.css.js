@@ -2,29 +2,9 @@ const styles = {
   body: {
     fontFamily: "Comic Sans MS",
     fontSize: 17,
+    paddingBottom: 24,
     paddingLeft: 39,
     paddingTop: 24
-  },
-  button: {
-    height: 30,
-    marginLeft: 175,
-    marginTop: 24,
-    width: 52
-  },
-  errorMessage: {
-    paddingLeft: 14,
-    paddingRight: 14
-  },
-  errorMessageContainer: {
-    alignItems: "center",
-    backgroundColor: "#cc0000",
-    border: "1px solid black",
-    borderRadius: 4,
-    color: "white",
-    display: "flex",
-    height: 50,
-    marginBottom: 20,
-    width: 300
   },
   header: {
     alignItems: "center",
@@ -39,16 +19,15 @@ const styles = {
     fontFamily: "Tahoma",
     fontSize: 28
   },
-  input: {
-    width: 220
+  hidden: {
+    display: "none"
   },
   loginForm: {
     backgroundColor: "white",
     border: "1px solid black",
     borderRadius: 4,
-    height: 320,
-    width: 300,
-    opacity: 0.8
+    height: 324,
+    width: 300
   },
   mainContainer: {
     alignItems: "center",
@@ -59,15 +38,12 @@ const styles = {
     flexDirection: "column",
     height: "100%",
     justifyContent: "center",
+    opacity: 0.8,
     width: "100%"
   },
-  password: {
+  passwordContainer: {
     marginBottom: 5,
-    paddingTop: 24
-  },
-
-  separateInput: {
-    marginBottom: 5
+    paddingTop: 19
   }
 };
 export default styles;

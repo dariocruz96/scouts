@@ -2,6 +2,10 @@
 import React, { Component } from "react";
 // Styles
 import styles from "./Login.css";
+// Component
+import Button from "../../components/Button/Button";
+import ErrorMessage from "./../../components/ErrorMessage";
+import InputField from "../../components/InputField/InputField";
 
 // Uma class é um componente que tem um estado
 // Uma const é um componente sem estado
@@ -12,9 +16,9 @@ class Login extends Component {
     // Propriedades do estado
     this.state = {
       email: "",
-      password: "",
+      isErrorShow: false,
       loginSuccessful: false,
-      isErrorShow: false
+      password: ""
     };
   }
 
@@ -31,43 +35,37 @@ class Login extends Component {
   handleSubmit = () => {
     const { email, password } = this.state;
     if (email === "aep197@escoteiros.pt" && password === "escoteiros") {
-      this.setState({ loginSuccessful: true });
-      this.setState({ isErrorShow: false });
+      this.setState({ loginSuccessful: true, isErrorShow: false });
     } else {
       this.setState({ isErrorShow: true });
     }
   };
+  handleErrorMessage = () => {
+    this.setState({ isErrorShow: false });
+  };
   render() {
+    const { isErrorShow } = this.state;
     return (
       <div style={styles.mainContainer}>
-        {this.state.isErrorShow && (
-          <div style={styles.errorMessageContainer}>
-            <div style={styles.errorMessage}>
-              The email or the password is incorrect.
-            </div>
-            <div>X</div>
-          </div>
-        )}
+        <ErrorMessage
+          closeErrorMessage={this.handleErrorMessage}
+          isVisible={isErrorShow}
+          message="Email ou password incorretos."
+        />
         <div style={styles.loginForm}>
           <div style={styles.header}>
             <div style={styles.headerTitle}>AEP 197 QUELFES</div>
           </div>
           <div style={styles.body}>
-            <div style={styles.separateInput}>Email</div>
-            <input style={styles.input} onChange={this.handleEmailChange} />
-            <div style={styles.password}>Password</div>
-            <input
-              style={styles.input}
-              type="password"
-              onChange={this.handlePasswordChange}
-            />
-            <button
-              style={styles.button}
-              type="submit"
-              onClick={this.handleSubmit}
-            >
-              Login
-            </button>
+            <InputField label="Email" onChange={this.handleEmailChange} />
+            <div style={styles.passwordContainer}>
+              <InputField
+                label="Password"
+                onChange={this.handlePasswordChange}
+                type="password"
+              />
+            </div>
+            <Button label="Login" onClick={this.handleSubmit} type="submit" />
           </div>
         </div>
       </div>
