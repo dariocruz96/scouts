@@ -19,7 +19,6 @@ class Login extends Component {
     this.state = {
       email: "",
       isErrorShow: false,
-      loginSuccessful: false,
       password: ""
     };
   }
@@ -44,8 +43,13 @@ class Login extends Component {
   };
   handleSubmit = () => {
     const { email, password } = this.state;
-    if (email === "aep197@escoteiros.pt" && password === "escoteiros") {
-      this.setState({ loginSuccessful: true, isErrorShow: false });
+    const { history } = this.props;
+    if (
+      email === translations.login.email &&
+      password === translations.login.password
+    ) {
+      this.setState({ isErrorShow: false });
+      history.push("./home");
     } else {
       this.setState({ isErrorShow: true });
     }

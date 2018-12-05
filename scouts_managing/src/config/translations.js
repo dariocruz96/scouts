@@ -1,10 +1,12 @@
 const translations = {
   login: {
-    headerTitle: "AEP 197 QUELFES",
+    email: "aep197@escoteiros.pt",
     errorMessage: "Email ou password incorretos",
+    headerTitle: "AEP 197 QUELFES",
     inputLabelEmail: "Email",
     inputLabelPassword: "Password",
-    loginButtonLabel: "Entrar"
+    loginButtonLabel: "Entrar",
+    password: "escoteiros"
   }
 };
 
