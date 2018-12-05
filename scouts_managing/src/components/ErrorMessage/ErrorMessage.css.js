@@ -4,7 +4,7 @@ import globals from "./../../config/globals";
 const styles = {
   closeIcon: {
     cursor: "pointer",
-    paddingLeft: 16,
+    paddingLeft: 18,
     paddingTop: 2
   },
   errorMessage: {
