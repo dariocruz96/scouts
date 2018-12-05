@@ -33,6 +33,11 @@ class Login extends Component {
   handleErrorMessage = () => {
     this.setState({ isErrorShow: false });
   };
+  handleKeyPress = event => {
+    if (event.key === "Enter") {
+      this.handleSubmit();
+    }
+  };
   handlePasswordChange = event => {
     const value = event.target.value;
     this.setState({ password: value });
@@ -65,11 +70,13 @@ class Login extends Component {
             <InputField
               label={translations.login.inputLabelEmail}
               onChange={this.handleEmailChange}
+              onKeyPress={this.handleKeyPress}
             />
             <div style={styles.passwordContainer}>
               <InputField
                 label={translations.login.inputLabelPassword}
                 onChange={this.handlePasswordChange}
+                onKeyPress={this.handleKeyPress}
                 type="password"
               />
             </div>
