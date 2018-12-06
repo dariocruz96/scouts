@@ -3,13 +3,13 @@ import React from "react";
 // Components
 import NavigationBar from "./../NavigationBar";
 
-const Home = props => {
+const Elements = props => {
   return (
     <React.Fragment>
       <NavigationBar navigateTo={props.history} />
-      <div>Hello Home page</div>
+      <div>Hello Elements Page</div>
     </React.Fragment>
   );
 };
 
-export default Home;
+export default Elements;
