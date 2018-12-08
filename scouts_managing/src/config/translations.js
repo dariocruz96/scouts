@@ -1,5 +1,6 @@
 const translations = {
   login: {
+    appLabel: "Scouts Managing",
     email: "aep197@escoteiros.pt",
     errorMessage: "Email ou password incorretos",
     headerTitle: "AEP 197 QUELFES",
