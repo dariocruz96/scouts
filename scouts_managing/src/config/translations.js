@@ -8,6 +8,12 @@ const translations = {
     inputLabelPassword: "Password",
     loginButtonLabel: "Entrar",
     password: "escoteiros"
+  },
+  iconTooltips: {
+    divisions: "Divisões",
+    elementsManage: "Gerir Elementos",
+    proofBooklet: "Caderneta de Provas",
+    scoutsCalendar: "Calendário Escotista"
   }
 };
 

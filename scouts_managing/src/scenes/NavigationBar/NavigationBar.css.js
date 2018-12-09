@@ -12,9 +12,13 @@ const styles = {
   },
   label: { fontFamily: globals.font, fontSize: 24 },
   icon: {
-    cursor: "pointer",
+    cursor: "pointer"
+  },
+  iconContainer: {
+    display: "flex",
     fontSize: 28,
-    marginRight: 16
+    justifyContent: "center",
+    width: 48
   },
   iconsContainer: {
     display: "flex",
@@ -24,7 +28,8 @@ const styles = {
   logoutIcon: {
     color: globals.colors.red,
     cursor: "pointer",
-    fontSize: 28
+    fontSize: 28,
+    marginLeft: 12
   },
   mainIcon: {
     cursor: "pointer",
