@@ -92,7 +92,7 @@ class NavigationBar extends Component {
           <div style={styles.iconContainer}>
             <Tooltip
               border="none"
-              content={translations.iconTooltips.scoutsCalendar}
+              content={translations.iconTooltips.elementsManage}
               fontFamily="Tahoma"
               fontSize="12px"
               padding={4}
