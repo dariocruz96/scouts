@@ -45,6 +45,14 @@ Divisions :
 * Apagar elementos
 * Inserir notificações num elemento
 
+* Nome
+* Idade
+* Divisão
+* Patrulha
+* Cargo de Patrulha
+* Promessa
+* Progresso Escotista
+* Especialidades
 Features :
 * Lista de elementos
 * Lista de presença dos elementos a cada reunião
