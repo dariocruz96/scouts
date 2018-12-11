@@ -5,23 +5,23 @@ const styles = {
   element: {
     alignItems: "center",
     alignText: "center",
-    borderRight: `1px solid ${globals.colors.black}`,
     display: "flex",
     flexDirection: "row",
     fontFamily: globals.font,
-    height: 30,
     justifyContent: "center",
     width: "100%"
   },
-  mainContainer: {
+  innerContainer: {
     border: `1px solid ${globals.colors.black}`,
+    borderRadius: 8,
     display: "flex",
     fontFamily: globals.font,
-    height: 30,
+    height: 48,
     justifyContent: "space-between",
+    marginBottom: 12,
     width: "100%"
   },
-  superContainer: {
+  mainContainer: {
     padding: 32
   },
   title: {
