@@ -7,10 +7,10 @@ const ElementRow = ({
   age,
   division,
   name,
+  occupation,
   patrol,
   progress,
   promisse,
-  role,
   speciality
 }) => {
   return (
@@ -19,7 +19,7 @@ const ElementRow = ({
       <div style={styles.element}>{age}</div>
       <div style={styles.element}>{division}</div>
       <div style={styles.element}>{patrol}</div>
-      <div style={styles.element}>{role}</div>
+      <div style={styles.element}>{occupation}</div>
       <div style={styles.element}>{progress}</div>
       <div style={styles.element}>{speciality}</div>
       <div style={styles.element}>{promisse}</div>
