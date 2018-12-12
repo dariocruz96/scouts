@@ -1,4 +1,10 @@
 const translations = {
+  iconTooltips: {
+    divisions: "Divisões",
+    elementsManage: "Gerir Elementos",
+    proofBooklet: "Caderneta de Provas",
+    scoutsCalendar: "Calendário Escotista"
+  },
   login: {
     appLabel: "Scouts Managing",
     email: "aep197@escoteiros.pt",
@@ -9,11 +15,8 @@ const translations = {
     loginButtonLabel: "Entrar",
     password: "escoteiros"
   },
-  iconTooltips: {
-    divisions: "Divisões",
-    elementsManage: "Gerir Elementos",
-    proofBooklet: "Caderneta de Provas",
-    scoutsCalendar: "Calendário Escotista"
+  elementsScreen: {
+    title: "Elementos"
   }
 };
 

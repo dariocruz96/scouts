@@ -4,7 +4,6 @@ import globals from "./../../../../config/globals";
 const styles = {
   element: {
     alignItems: "center",
-    alignText: "center",
     display: "flex",
     flexDirection: "row",
     fontFamily: globals.font,

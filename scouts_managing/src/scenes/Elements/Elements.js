@@ -1,9 +1,11 @@
 // React
 import React, { Component } from "react";
-// Components
-import NavigationBar from "./../NavigationBar";
+// Globals
+import translations from "./../../config/translations";
 // Styles
 import styles from "./Elements.css";
+// Components
+import NavigationBar from "./../NavigationBar";
 import ElementRow from "../../scenes/Elements/components/ElementRow";
 
 class Elements extends Component {
@@ -37,7 +39,7 @@ class Elements extends Component {
     return (
       <React.Fragment>
         <NavigationBar navigateTo={this.props.history} />
-        <div style={styles.title}>Elementos</div>
+        <div style={styles.title}>{translations.elementsScreen.title}</div>
         <div style={styles.mainContainer}>
           <ElementRow
             age={"Idade"}
@@ -51,16 +53,17 @@ class Elements extends Component {
           />
           {Elements.map((element, index) => {
             return (
-              <div style={styles.innerContainer}>
-                <div style={styles.element}>{element.name}</div>
-                <div style={styles.element}>{element.age}</div>
-                <div style={styles.element}>{element.division}</div>
-                <div style={styles.element}>{element.patrol}</div>
-                <div style={styles.element}>{element.role}</div>
-                <div style={styles.element}>{element.progress}</div>
-                <div style={styles.element}>{element.speciality}</div>
-                <div style={styles.element}>{element.promisse}</div>
-              </div>
+              <ElementRow
+                age={element.age}
+                division={element.division}
+                key={index}
+                name={element.name}
+                patrol={element.patrol}
+                progress={element.progress}
+                promisse={element.promisse}
+                role={element.role}
+                speciality={element.speciality}
+              />
             );
           })}
         </div>
