@@ -17,6 +17,14 @@ const translations = {
   },
   elementsScreen: {
     title: "Elementos"
+  },
+  divisionsScreen: {
+    cheifs: "Chefes",
+    explorers: "Exploradores",
+    scouts: "Escoteiros",
+    title: "Divisões",
+    walkers: "Caminheiros",
+    wolfs: "Lobitos"
   }
 };
 
