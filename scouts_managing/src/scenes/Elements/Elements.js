@@ -7,6 +7,9 @@ import styles from "./Elements.css";
 // Components
 import NavigationBar from "./../NavigationBar";
 import ElementRow from "../../scenes/Elements/components/ElementRow";
+//import Button from "../../components/Button/Button";
+//import InputField from "../../components/InputField/InputField";
+import AddForm from "./components/AddForm";
 
 class Elements extends Component {
   listOfElements = () => {
@@ -67,6 +70,7 @@ class Elements extends Component {
             );
           })}
         </div>
+        <AddForm />
       </React.Fragment>
     );
   }
