@@ -5,13 +5,36 @@ import translations from "./../../config/translations";
 // Styles
 import styles from "./Elements.css";
 // Components
-import NavigationBar from "./../NavigationBar";
-import ElementRow from "../../scenes/Elements/components/ElementRow";
-//import Button from "../../components/Button/Button";
-//import InputField from "../../components/InputField/InputField";
 import AddForm from "./components/AddForm";
+import ElementRow from "../../scenes/Elements/components/ElementRow";
+import NavigationBar from "./../NavigationBar";
 
 class Elements extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isFormOpen: false };
+  }
+
+  handleClickOpenForm = () => {
+    this.setState({ isFormOpen: true });
+  };
+  handleClickCloseForm = () => {
+    this.setState({ isFormOpen: false });
+  };
+
+  elementLabels = () => {
+    const labels = [
+      translations.elementsScreen.age,
+      translations.elementsScreen.division,
+      translations.elementsScreen.name,
+      translations.elementsScreen.occupation,
+      translations.elementsScreen.patrol,
+      translations.elementsScreen.progress,
+      translations.elementsScreen.speciality,
+      translations.elementsScreen.promisse
+    ];
+    return labels;
+  };
   listOfElements = () => {
     const elements = [
       {
@@ -37,22 +60,24 @@ class Elements extends Component {
     ];
     return elements;
   };
+
   render() {
     const Elements = this.listOfElements();
+    const Labels = this.elementLabels();
     return (
       <React.Fragment>
         <NavigationBar navigateTo={this.props.history} />
         <div style={styles.title}>{translations.elementsScreen.title}</div>
         <div style={styles.mainContainer}>
           <ElementRow
-            age={"Idade"}
-            division={"Divisão"}
-            name={"Nome"}
-            occupation={"Cargo de Patrulha"}
-            patrol={"Patrulha"}
-            progress={"Progresso Escotista"}
-            promisse={"Promessa"}
-            speciality={"Especialidades"}
+            age={translations.elementsScreen.age}
+            division={translations.elementsScreen.division}
+            name={translations.elementsScreen.name}
+            occupation={translations.elementsScreen.occupation}
+            patrol={translations.elementsScreen.patrol}
+            progress={translations.elementsScreen.progress}
+            promisse={translations.elementsScreen.promisse}
+            speciality={translations.elementsScreen.speciality}
           />
           {Elements.map((element, index) => {
             return (
@@ -70,7 +95,14 @@ class Elements extends Component {
             );
           })}
         </div>
-        <AddForm />
+        <button onClick={this.handleClickOpenForm} style={styles.addButton}>
+          {translations.elementsScreen.add}
+        </button>
+        <AddForm
+          closeForm={this.handleClickCloseForm}
+          isFormOpen={this.state.isFormOpen}
+          labels={Labels}
+        />
       </React.Fragment>
     );
   }

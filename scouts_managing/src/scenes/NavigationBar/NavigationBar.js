@@ -36,7 +36,6 @@ class NavigationBar extends Component {
           style={styles.mainIcon}
           onClick={this.handleNavigateToHome}
         />
-        <div style={styles.label}>{translations.login.appLabel}</div>
         <div style={styles.iconsContainer}>
           <div style={styles.iconContainer}>
             <Tooltip

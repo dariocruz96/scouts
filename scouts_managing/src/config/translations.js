@@ -6,7 +6,6 @@ const translations = {
     scoutsCalendar: "Calendário Escotista"
   },
   login: {
-    appLabel: "Scouts Managing",
     email: "aep197@escoteiros.pt",
     errorMessage: "Email ou password incorretos",
     headerTitle: "AEP 197 QUELFES",
@@ -16,6 +15,17 @@ const translations = {
     password: "escoteiros"
   },
   elementsScreen: {
+    add: "Adicionar",
+    addElement: "Adicionar Elemento",
+    age: "Idade",
+    cancel: "Cancelar",
+    division: "Divisão",
+    name: "Nome",
+    occupation: "Cargo de Patrulha",
+    patrol: "Patrulha",
+    progress: "Progresso Escotista",
+    promisse: "Promessa",
+    speciality: "Especialidade",
     title: "Elementos"
   },
   divisionsScreen: {

@@ -2,6 +2,11 @@
 import globals from "./../../config/globals";
 
 const styles = {
+  addButton: {
+    bottom: 32,
+    position: "absolute",
+    right: 32
+  },
   mainContainer: {
     padding: 32
   },
