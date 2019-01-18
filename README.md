@@ -1,61 +1,63 @@
-# scouts
+# Scouts Web Application
 
--> Login Page 
+This is the official repository for AEP 197 QUELFES web application, a scouts group located in Algarve Portugal. This application/platform have as main goal to organize and control the elements of the group, each division, challenges and events. 
 
-* Cabeçalho (Titulo Scouts Managing)
-* Username
-* Password
-* Termos e condições 
-* Botão de login
+When oppening the application we will have a **Login Page** which an administrator can login with the correct credentials, after logining the **Home Screen** will appear with all kinds of information not yet defined. The user can search trought four different main screens which are:
 
-Divisions :
-*Lobitos
-*Escoteiros
-*Exploradores
-*Caminheiros
-*Chefes
+* Divisions Screen
+* BookletProof Screen
+* ScoutsCalendar Screen
+* Elements Screen
 
--> Page after login
+### Divisions
 
-* Divisões
-* Caderneta de Provas
-* Calendário Escotista
-* Gerir elementos
+Starting with divisions screen, we will have the existing divisions ordered ascendly which the user can click and see the existing elements belonging to each division. 
 
--> Divison
+The existing divisions are:
 
-* Selecionar o que se pretende visualizar ( as patrulhas juntas, só uma patrulha)
-* Criar patrulhas
-* Ordenar os elementos das patrulhas
-* Tabela com informações dos elementos
+* Chiefs
+* Escoteiros
+* Explorers
+* Walkers
+* Worlfs
 
--> Caderneta de Provas
+```
+Selecionar o que se pretende visualizar ( as patrulhas juntas, só uma patrulha)
+Criar patrulhas
+Ordenar os elementos das patrulhas
+Tabela com informações dos elementos
+``` 
 
-* Visualizar a caderneta de provas digitalmente com opção de guardar a informação dos elementos quando estes realizam uma das provas
+### BookletProof Screen
 
--> Calendário Escotista
+```
+Visualizar a caderneta de provas digitalmente com opção de guardar a informação dos elementos quando estes realizam uma das provas
+```
+### ScoutsCalendar Screen
 
-* Calendário sincronizado com o google(provavelmente) com opção de adicionar eventos (cada chefe só pode alterar e criar eventos da sua divisão ou patrulha)
+```
+Calendário sincronizado com o google(provavelmente) com opção de adicionar eventos (cada chefe só pode alterar e criar eventos da sua divisão ou patrulha)
+```
+### Elements Screen
 
--> Gerir elementos
+The elements screen will allow the user to see the existing elements, to add a new element, to edit and to delete any element.
+The elements list will contain precise information about each element, filling the following fields: 
 
-* Inserir elementos
-* Alterar dados de elementos
-* Visualizar dados de elementos
-* Apagar elementos
-* Inserir notificações num elemento
+* Name
+* Age
+* Division
+* Patrol
+* Occupation
+* Progress
+* Promisse
+* Speciality
+* Progress
 
-* Nome
-* Idade
-* Divisão
-* Patrulha
-* Cargo de Patrulha
-* Promessa
-* Progresso Escotista
-* Especialidades
+```
 Features :
-* Lista de elementos
 * Lista de presença dos elementos a cada reunião
 * Lista de material levado pelos elementos para cada reunião
 * Patrulha do elemento
 * Cargo do elemento na patrulha
+* Inserir notificações num elemento
+```
