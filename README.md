@@ -1,8 +1,8 @@
 # Scouts Web Application
 
-This is the official repository for AEP 197 QUELFES web application, a scouts group located in Algarve Portugal. This application/platform have as main goal to organize and control the elements of the group, each division, challenges and events. 
+This is the official repository for AEP 197 QUELFES web application, a scouts group located in Algarve Portugal. This application/platform has as main goal to organize and control the elements of the group, each division, challenges and events.
 
-When oppening the application we will have a **Login Page** which an administrator can login with the correct credentials, after logining the **Home Screen** will appear with all kinds of information not yet defined. The user can search trought four different main screens which are:
+When opening the application, we will have a **Login Page** which an administrator can login with the correct credentials, after logging the **Home Screen** will appear with all kinds of information not yet defined. The user can search throughout four different main screens, which are:
 
 * Divisions Screen
 * BookletProof Screen
@@ -11,7 +11,7 @@ When oppening the application we will have a **Login Page** which an administrat
 
 ### Divisions
 
-Starting with divisions screen, we will have the existing divisions ordered ascendly which the user can click and see the existing elements belonging to each division. 
+Starting with divisions screen, we will have the existing divisions ordered and the user can click in each division to see the existing elements belonging to each division. 
 
 The existing divisions are:
 
