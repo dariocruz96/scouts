@@ -31,12 +31,14 @@ Tabela com informações dos elementos
 ### BookletProof Screen
 
 ```
-Visualizar a caderneta de provas digitalmente com opção de guardar a informação dos elementos quando estes realizam uma das provas
+Visualizar a caderneta de provas digitalmente com opção de guardar a informação 
+dos elementos quando estes realizam uma das provas
 ```
 ### ScoutsCalendar Screen
 
 ```
-Calendário sincronizado com o google(provavelmente) com opção de adicionar eventos (cada chefe só pode alterar e criar eventos da sua divisão ou patrulha)
+Calendário sincronizado com o google(provavelmente) com opção de adicionar 
+eventos (cada chefe só pode alterar e criar eventos da sua divisão ou patrulha)
 ```
 ### Elements Screen
 
